@@ -1,0 +1,27 @@
+# 🔒 Ignore virtual environment
+venv/
+
+# 🗑️ Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🧪 Ignore temporary or generated files
+*.log
+*.tmp
+*.bak
+
+# 🧠 Ignore Chroma vector DB (auto-generated)
+rag_vectorstore/
+
+# 💻 Streamlit-specific (if any)
+.streamlit/
+
+# 🖥️ System files
+.DS_Store
+Thumbs.db
+
+# ⚙️ IDE/Editor configs (optional)
+.vscode/
+.idea/
