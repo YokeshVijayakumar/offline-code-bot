@@ -66,7 +66,7 @@ offline-code-bot/
 
 
 
-```bash
+Bash
 
 python -m venv venv
 
@@ -78,15 +78,11 @@ python -m venv venv
 
 Bash
 
-
-
 pip install -r requirements.txt
 
 3\. Download the embedding model (one time)
 
 Python
-
-
 
 from sentence\_transformers import SentenceTransformer
 
@@ -94,23 +90,15 @@ SentenceTransformer('BAAI/bge-small-en-v1.5').save('./models/bge-small-en-v1.5')
 
 Note: This will download the model to the ./models/bge-small-en-v1.5 directory. See models/README.md for more details.
 
-
-
 4\. Populate my\_style/ (Your Custom Code Examples)
 
 Place your custom code files (e.g., .py, .js, .css, etc.) into the my\_style/ directory. These files will be used to train the RAG system on your preferred coding style. The application will automatically synchronize your rag\_vectorstore with changes in this directory.
-
-
 
 5\. Start Ollama Server and Download CodeLlama Model
 
 Ensure Ollama is installed and running on your system. Then, download the codellama:7b-instruct model:
 
-
-
 Bash
-
-
 
 ollama run codellama:7b-instruct
 
@@ -118,29 +106,18 @@ ollama run codellama:7b-instruct
 
 Bash
 
-
-
 streamlit run app.py
 
 📦 Note on Models
 
 The models/ folder and rag\_vectorstore/ are not included in the Git repository to keep the size small. See models/README.md for instructions to download the model locally.
 
-
-
 🧠 Powered By
 
 Streamlit
 
-
-
 Ollama
-
-
 
 SentenceTransformers
 
-
-
 ChromaDB
-
