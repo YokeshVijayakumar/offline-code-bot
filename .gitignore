@@ -15,6 +15,12 @@ __pycache__/
 # 🧠 Ignore Chroma vector DB (auto-generated)
 rag_vectorstore/
 
+# ❌ Ignore the entire local model directory (too large for GitHub)
+models/
+
+# ✅ Exception: allow the model README file to be included
+!models/README.md
+
 # 💻 Streamlit-specific (if any)
 .streamlit/
 
