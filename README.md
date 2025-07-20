@@ -66,27 +66,33 @@ offline-code-bot/
 
 
 
-Bash
+```Bash
 
 python -m venv venv
 
 .\\venv\\Scripts\\activate   # On Windows PowerShell
 
-\# For macOS/Linux: source venv/bin/activate
+source venv/bin/activate     # For macOS/Linux:
+
+```
 
 2\. Install dependencies
 
-Bash
+```Bash
 
 pip install -r requirements.txt
 
+```
+
 3\. Download the embedding model (one time)
 
-Python
+```Python
 
 from sentence\_transformers import SentenceTransformer
 
 SentenceTransformer('BAAI/bge-small-en-v1.5').save('./models/bge-small-en-v1.5')
+
+```
 
 Note: This will download the model to the ./models/bge-small-en-v1.5 directory. See models/README.md for more details.
 
@@ -98,26 +104,31 @@ Place your custom code files (e.g., .py, .js, .css, etc.) into the my\_style/ di
 
 Ensure Ollama is installed and running on your system. Then, download the codellama:7b-instruct model:
 
-Bash
+```Bash
 
 ollama run codellama:7b-instruct
 
+```
+
 6\. Run the app
 
-Bash
+```Bash
 
 streamlit run app.py
 
+```
+---
 📦 Note on Models
 
 The models/ folder and rag\_vectorstore/ are not included in the Git repository to keep the size small. See models/README.md for instructions to download the model locally.
 
+---
 🧠 Powered By
 
-Streamlit
+1.Streamlit
 
-Ollama
+2.Ollama
 
-SentenceTransformers
+3.SentenceTransformers
 
-ChromaDB
+4.ChromaDB
