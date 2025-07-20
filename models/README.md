@@ -50,11 +50,12 @@ from sentence\_transformers import SentenceTransformer
 
 SentenceTransformer('BAAI/bge-small-en-v1.5').save('./models/bge-small-en-v1.5')
 
+```
 Once downloaded, the model will be stored in this folder and used automatically during RAG-based retrieval.
 
+---
 
-
-📌 Important
+\##📌 Important
 
 You only need to download this model once.
 
